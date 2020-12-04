@@ -5,7 +5,7 @@ const logFileText = async file => {
         for (let i = 0; i < zul.split("\n").length; ++i) {
             firstLetter = zul.split("\n")[i].charAt(0).toUpperCase();
             noFirst = zul.split("\n")[i].substring(1);
-            result.push((firstLetter + noFirst).trim()+" ");
+            result.push((firstLetter + noFirst).trim());
         }
 
         $.each(result, function (i, el) {
@@ -15,7 +15,7 @@ const logFileText = async file => {
         let xd = uniqueNames.sort((a, b) => a.localeCompare(b))
         let skript = document.getElementById('script').innerHTML;
         for(let i = 0; i<xd.length; ++i) {
-            skript += xd[i];
+            skript += xd.join(', ');
         }
         document.getElementById('script').innerHTML = skript.substring(0, skript.length - 2);
         document.getElementById('counter').innerHTML = "Names in total: " + xd.length;
