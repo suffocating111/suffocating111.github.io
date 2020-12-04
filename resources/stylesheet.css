@@ -1,30 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-body{
-    background: black;
-    color: #B7B9BD;
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Inconsolata', monospace;
 }
 
-#section{
-    text-align: center;
-    margin-top: 15%;
-    margin-right: 15%;
-}
-#section h2{
-    margin-left: 10%;
-    font-size: 0.8vw;
+html{
+    background: black;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-#section h3{
-    margin-left: 20%;
+.container{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
-#section a{
-    text-decoration: none;
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    background-size: cover;
     color: white;
 }
-#section a:hover{
+
+.main{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+}
+
+.main h1{
+    color: aquamarine;
+    width: 100%;
+    font-size: 2.5vw;
+}
+
+.main h2{
+    font-size: 1.25vw;
+    margin-left: 4%;
+    color: #60CD91;
+}
+
+.main h3{
+    font-size: 1.0vw;
+    color: white;
+    margin-left: 9.5%;
+}
+
+.main a{
+    color: #89CDB3;
+}
+
+.main a:hover{
     text-decoration: underline;
+    animation: cycle 5s linear infinite alternate;
+}
+
+.secondary{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+}
+.secondary h1{
+    color: aquamarine;
+    width: 100%;
+    font-size: 2.5vw;
+}
+
+.secondary h2{
+    font-size: 1.25vw;
+    margin-left: 5%;
+    color: #60CD91;
+}
+
+.secondary h3{
+    font-size: 1.0vw;
+    margin-left: 43.75%;
+    text-align: left;
+    color: #a9e9d0;
+}
+
+.secondary p{
+    font-size: 1.0vw;
+    margin-left: 43.75%;
+    text-align: left;
+}
+
+.secondary a{
+    color: white;
+    margin-right: 17.25%;
+}
+
+.secondary a:hover{
+    animation: cycle 5s linear infinite alternate;
+}
+
+.secondary a:visited{
+    color: white;
+}
+
+.projects{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    color: white;
+}
+.projects h1{
+    color: aqua;
+    font-size: 2.5vw;
+    padding-bottom: 3%;
+}
+.projects p{
+    font-size: 1.25vw;
+    margin-right: 20%;
+}
+.projects a{
+    color: white;
+}
+.projects a:hover{
+    animation: cycle 5s linear infinite alternate;
+}
+
+.border{
+    padding: 1%;
+    border: 2px solid;
+    animation: cycleBorder 5s linear infinite alternate;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.script{
+    font-size: 1.5vw;
+
+}
+
+.contact{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    color: white;
+}
+
+.zulsorter{
+    float: left;
+    margin-left: 25%;
+    width: 25%;
+}
+
+.thisPage{
+    margin-left: 55%;
+    width: 25%;
+}
+
+@keyframes cycle {
+    100% { color: rgba(215, 216, 217, 0.5);}
+    80% { color: rgba(227, 112, 112, 0.5);}
+    60% { color: rgba(155, 219, 184, 0.5);}
+    40% { color: rgb(193, 129, 195);}
+    20% { color: rgb(98, 126, 229);}
+}
+
+@keyframes cycleBorder {
+    100% { border-color: rgba(215, 216, 217, 0.5);}
+    80% { border-color: rgba(227, 112, 112, 0.5);}
+    60% { border-color: rgba(155, 219, 184, 0.5);}
+    40% { border-color: rgb(193, 129, 195);}
+    20% { border-color: rgb(98, 126, 229);}
 }
