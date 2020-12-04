@@ -10,7 +10,7 @@ html{
     background: black;
     scroll-behavior: smooth;
     font-family: 'Inconsolata', monospace;
-    word-spacing: 0.1vw; !important;
+    word-spacing: 1px; !important;
 }
 body{
     font-family: 'Inconsolata', monospace;
