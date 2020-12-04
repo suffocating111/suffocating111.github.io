@@ -14,19 +14,19 @@ html{
 }
 
 .container{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
     background: transparent;
 }
 
 .section{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     color: white;
     scroll-snap-align: start;
@@ -34,27 +34,24 @@ html{
 
 .main{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15%;
+    padding-top: 30vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .main h1{
     color: aquamarine;
-    width: 100%;
-    font-size: 2.5vw;
+    font-size: 2.5rem;
 }
 
 .main h2{
-    font-size: 1.25vw;
-    margin-left: 4%;
+    font-size: 1.25rem;
     color: #60CD91;
 }
 
 .main h3{
-    font-size: 1.0vw;
+    font-size: 1.25rem;
     color: white;
-    margin-left: 9.5%;
 }
 
 .main a{
@@ -70,36 +67,36 @@ html{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15%;
+    padding-top: 15vh;
 }
 .secondary h1{
     color: aquamarine;
-    width: 100%;
-    font-size: 2.5vw;
+    width: 100vw;
+    font-size: 5em;
 }
 
 .secondary h2{
-    font-size: 1.25vw;
-    margin-left: 5%;
+    font-size: 3rem;
+    margin-left: 5vw;
     color: #60CD91;
 }
 
 .secondary h3{
-    font-size: 1.0vw;
-    margin-left: 43.75%;
-    text-align: left;
+    font-size: 2.5rem;
+    text-align: center;
     color: #a9e9d0;
 }
 
 .secondary p{
-    font-size: 1.0vw;
-    margin-left: 43.75%;
-    text-align: left;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .secondary a{
     color: white;
-    margin-right: 17.25%;
+    margin-right: 17.25vw;
 }
 
 .secondary a:hover{
@@ -112,19 +109,19 @@ html{
 
 .projects{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10%;
+    padding-top: 10vh;
     color: white;
 }
+
 .projects h1{
     color: aqua;
-    font-size: 2.5vw;
-    padding-bottom: 3%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 5vh;
 }
 .projects p{
-    font-size: 1.25vw;
-    margin-right: 20%;
+    font-size: 1.25rem;
+    padding-bottom: 3vh;
 }
 .projects a{
     color: white;
@@ -134,40 +131,57 @@ html{
 }
 
 .border{
-    padding: 1%;
-    border: 2px solid;
+    padding: 1rem;
+    border: 3px solid;
     animation: cycleBorder 5s linear infinite alternate;
-    width: 80%;
+    width: 80vw;
     height: 50vh;
     display: inline-block;
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: 20vh;
+    margin-left: 10vw;
     flex-direction: column;
     overflow: scroll;
 }
 
 .script{
-    font-size: 1.5vw;
+    font-size: 1em;
     text-align: justify;
     text-align-last: center;
 }
 
+.header{
+    position: sticky;
+}
+
+.border h1{
+    text-align: center; !important;
+
+}
+
 .contact {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 5rem;
     color: white;
 }
 
 
 .zulsorter{
-    float: left;
-    margin-left: 25%;
-    width: 25%;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
 }
 
+
 .thisPage{
-    margin-left: 55%;
-    width: 25%;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+
+.counter{
+    padding-top: 1vh;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 @keyframes cycle {

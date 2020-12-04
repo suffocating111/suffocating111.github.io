@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~blazy => zul-sorter</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="logFileText('arr.txt')">
+
 <div class="container">
     <div class="section">
-        <div class="secondary">
+        <div class="main">
             <h1>żul sorter</h1><br/>
             <h2>scroll down to get żul names</h2><br/>
             <h3>original project to sort dosser people's nicknames</h3><br/>
-            <p><a href="https://github.com/suffocating111/zul-sorter">GitHub project</a></p><br/>
-            <p><a href="index.html">back to landing page</a></p>
+            <p><a href="https://github.com/suffocating111/zul-sorter" target="_blank">GitHub project</a></p><br/>
+            <p><a href="index.html" target="_self">back to landing page</a></p>
         </div>
     </div>
     <div class="section">
         <div class="border">
-            <div class="script">
-                <h1>Choose your fighter</h1>
-                <script src="script.js"></script>
-            </div>
+            <h1>Choose your fighter</h1>
+            <div class="script" id="script"><br></div>
+            <div id="counter" class="counter"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="contact">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYiaZLv2khkzf_1o-dhdFdoWsj9_tFO30Zd-_Ccaa5N_cESg/viewform?embedded=true"style="width: 80vw; height: 100vh" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
         </div>
     </div>
 </div>
