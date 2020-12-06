@@ -15,7 +15,7 @@ const logFileText = async file => {
         let xd = uniqueNames.sort((a, b) => a.localeCompare(b))
         let skript = document.getElementById('script').innerHTML;
         for(let i = 0; i<xd.length; ++i) {
-            skript += xd.join(', ');
+            skript += xd[i] + ", ";
         }
         document.getElementById('script').innerHTML = skript.substring(0, skript.length - 2);
         document.getElementById('counter').innerHTML = "Names in total: " + xd.length;
